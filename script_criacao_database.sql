@@ -1,16 +1,20 @@
-create database teste;  
-use teste;
-create table cliente 
+create database bd_escola;  
+use bd_escola;
+create table aluno
 (
-codigo_cliente int,
-nome_cliente varchar(45),
-sobrenome_cliente varchar(45),
+codigo_aluno int,
+nome_aluno varchar(45),
+sobrenome_aluno varchar(45),
 cpf int,
 cep char(8),
-telefone varchar(9)
+telefone varchar(9),
+PRIMARY KEY (ID)
 );
-create table funcionario
+create table professor
 (
-codigo_funcionario int,
-nome_funcionario varchar(45)
+codigo_professor int,
+nome_professor varchar(45),
+sobrenome_professor varchar(45),
+materia varchar(45),
+PRIMARY KEY (ID)
 )
